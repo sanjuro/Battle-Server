@@ -26,6 +26,11 @@ describe CellShip do
     it "should require a ship id" do
       FactoryGirl.build(:cell_ship, :ship_id => '').should_not be_valid
     end
+    
+    it "should check if the max has been reached" do
+      CellShip.should
+      FactoryGirl.build(:cell_ship, :ship_id => '').should_not be_valid
+    end
 
   end
   
